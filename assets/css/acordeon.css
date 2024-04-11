@@ -1,0 +1,63 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.acordeon.open,
+.acordeon:hover {
+    border: 1px solid #42437a;
+    background-color: #55569e;
+    box-shadow: inset -3px -3px 9px #33335e;
+}
+
+.acordeon .trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .5rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
+
+.acordeon .trigger::after {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/img/arrow.png');
+    transition: .5s;
+    rotate: 180deg;
+}
+
+.acordeon.open .trigger::after {
+    transform: rotate(180deg);
+}
+
+.acordeon .content{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.acordeon.open .content{
+    display: block;
+    height: auto;
+    padding: 1rem 1rem 1rem 2rem;
+    opacity: 1;
+}
