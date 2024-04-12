@@ -17,9 +17,12 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
 
     <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/acordeon.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/skills.css">
     <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/experience.css">
+    <link rel="stylesheet" href="/assets/css/contacts.css">
 
     <link rel="icon" href="/assets/img/icon.png">
 
@@ -37,26 +40,37 @@
             </div>
         </header>
 
-        <section class="acordeon open">
+        <section class="acordeon">
             <button class="trigger" type="button">
-                Habilidades
+                <h3>Habilidades</h3>
             </button>
             <div class="content">
-                <ul class="skills">
-                    <li>HTML Web Developer</li>
-                    <li>CSS Web Developer</li>
-                    <li>JavaScript Developer</li>
-                    <li>Lógica de Programação</li>
-                    <li>Web Designer</li>
-                    <li>Administrador de Banco de Dados</li>
-                    <li>Microsoft Power BI</li>
-                </ul>
+                <div class="skills">
+                    <section class="tools">
+                        <h4>Ferramentas:</h4>
+                        <ul>
+                            <li><img src="/assets/img/icons/tools/html.png" alt="HTML" title="HTML"></li>
+                            <li><img src="/assets/img/icons/tools/css.png" alt="CSS" title="CSS"></li>
+                            <li><img src="/assets/img/icons/tools/js.png" alt="JS" title="JS"></li>
+                            <li><img src="/assets/img/icons/tools/ts.png" alt="TS" title="TS"></li>
+                        </ul>
+                    </section>
+                    <section class="courses">
+                        <h4>Cursos:</h4>
+                        <ul>
+                            <li>Lógica de Programação</li>
+                            <li>DBA</li>
+                            <li>Web Designer</li>
+                            <li>Microsoft Power BI</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
 
-        <section class="acordeon open">
+        <section class="acordeon">
             <button class="trigger" type="button">
-                Portfólio
+                <h3>Portfólio</h3>
             </button>
             <div class="content">
                 <ul class="portfolio">
@@ -64,14 +78,77 @@
                         <span class="title github">HBO-MAX</span>
                         <a href="https://www.google.com.br">www.google.com.br</a>
                     </li>
-                    <li><a href="https://www.google.com.br"><span class="title">Trilha HTML</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">Trilha CSS</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">Trilha JS</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">Coffee Shop</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">Discord</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">Pokedex</span></a></li>
-                    <li><a href="https://www.google.com.br"><span class="title">YouTube</span></a></li>
+                    <li>
+                        <span class="title github">Trilha HTML</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">Trilha CSS</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">Trilha JS</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">Coffee Shop</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">Discord</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">Pokedex</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title github">YouTube</span>
+                        <a href="https://www.google.com.br">www.google.com.br</a>
+                    </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h3>Experiência</h3>
+            </button>
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h4 class="title">Ministério do Desenvolvimento Social</h4>
+                        <p class="period">Desenvolvedora Web - (12/2021 - Atualmente)</p>
+                        <p>
+                            Responsável pelo portal oficial do ministério
+                            (mds.gov.br) e intranet, acompanhamento e controle de
+                            processos no sistema SEI, Diagramação e divulgação de
+                            boletins, informativos e newsletter.</p>
+                    </li>
+                    <li>
+                        <h4 class="title">Egaplast Artefatos e Comércio de Plásticos</h4>
+                        <p class="period">Analista de Dados - (01/2020 – 11/2021)</p>
+                        <p>Dashboards em PBI e Excel, análises administrativas
+                            e financeiras, Manutenção de banco de dados, Criação e
+                            manutenção de planilhas.</p>
+                        <p class="period">Assistente administrativo - (06/2018 – 12/2019)</p>
+                        <p>Emissão e importação de Nota Fiscal eletrônica,
+                            Controle de estoque e Balanço, Controle tributário de
+                            clientes e produtos, Criação de Plano de Contas, Contas a
+                            Pagar e Contas a Receber, Cobrança, criação, melhoria e
+                            desenvolvimento de processos administrativos.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="redes">
+                <a href="https://www.google.com.br"><img src="/assets/img/contacts/github.svg" class="icon git"></a>
+                <a href="https://www.google.com.br"><img src="/assets/img/contacts/linkedin.svg" class="icon"></a>
+            <a href="https://www.google.com.br"><img src="/assets/img/contacts/email.svg" class="icon"></a>
+            <a href="https://www.google.com.br"><img src="/assets/img/contacts/whatsapp.svg" class="icon"></a>
+            <a href="mailto:kalitaqueiroz@gmail.com"><img src="/assets/img/contacts/location.svg" class="icon"></a>
             </div>
         </section>
 
