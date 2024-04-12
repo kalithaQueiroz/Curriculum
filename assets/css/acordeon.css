@@ -20,12 +20,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     padding: .5rem 2rem;
     background-color: transparent;
     color: #fff;
     border: none;
+}
+
+.acordeon .trigger h3 {
+    margin: .5rem .5rem;
+    font-size: 1.2rem;
+    text-align: start;
 }
 
 .acordeon .trigger:hover {
@@ -35,29 +41,28 @@
 .acordeon .trigger::after {
     content: '';
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/img/arrow.png');
+    background-image: url('/assets/img/icons/arrow.svg');
     transition: .5s;
-    rotate: 180deg;
 }
 
 .acordeon.open .trigger::after {
     transform: rotate(180deg);
 }
 
-.acordeon .content{
+.acordeon .content {
     overflow: hidden;
     height: 0;
     opacity: 0;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
-.acordeon.open .content{
+.acordeon.open .content {
     display: block;
     height: auto;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 0rem 1rem 1rem 2rem;
     opacity: 1;
 }
