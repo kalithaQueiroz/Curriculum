@@ -33,7 +33,7 @@
     height: .8rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('assets/img/icons/calendar.svg');
+    background-image: url('/assets/img/icons/calendar.svg');
     margin-right: .8rem;
     
 }
