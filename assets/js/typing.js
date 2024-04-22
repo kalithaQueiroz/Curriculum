@@ -1,6 +1,6 @@
 const el = document.querySelector("#typing");
-const text = "eu sou Kálitha Queiroz";
-const interval = 80;
+const text = "Olá, eu sou Kálitha Queiroz";
+const interval = 100;
 
 function showText(el, text, interval) {
 
