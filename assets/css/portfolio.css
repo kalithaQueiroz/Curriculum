@@ -15,6 +15,10 @@
     margin: .5rem 0;
 }
 
+.portfolio li a {
+    margin: 0 1.6rem;
+}
+
 .portfolio li .title {
     display: flex;
     flex-direction: row;
@@ -28,16 +32,16 @@
 .portfolio li .title.img::before {
     content: "";
     display: inline-block;
-    width:1rem;
-    height:1rem;
+    width:1.1rem;
+    height:1.1rem;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: .5rem;
 }
 
-.portfolio li .title.github::before {
+/* .portfolio li .title.github::before {
     background-image: url('../img/icons/github.svg');
-}
+} */
 
 .portfolio li .title.hbo::before {
     background-image: url('../img/icons/projects/hbo.png');
