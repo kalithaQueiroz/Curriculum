@@ -23,8 +23,6 @@ body {
 .main::before,
 .main::after {
     content: "";
-    background: rgb(90, 13, 131);
-    background: linear-gradient(130deg, rgba(90, 13, 131, 1) 0%, rgba(0, 0, 0, 1) 50%, rgb(34, 0, 171) 100%);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -36,10 +34,40 @@ body {
     z-index: -1;
 }
 
+.gradient-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(90, 13, 131, 1), rgba(0, 0, 0, 1), rgb(34, 0, 171));
+    background-size: 200% 100%;
+    animation: gradientMovement 10s ease infinite alternate;
+}
+
 @media only screen and (min-width: 750px) {
     .main {
         max-width: 1024px;
         margin: 1rem auto;
         padding: 1rem;
+    }
+}
+
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
