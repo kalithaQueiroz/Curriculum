@@ -17,7 +17,7 @@ body {
     color: #fff;
     position: relative;
     z-index: -1;
-    background: linear-gradient(135deg, #56125b 10%, #271e6e 30%, #000000 50%, #271e6e 70%, #56125b 90%);
+    background: linear-gradient(135deg, #370e47 10%, #1d1650 30%, #222222 50%, #1d1650 70%, #370e47 90%);
     background-size: 200% 100%;
     animation: gradientMovement 7s ease infinite alternate;
     background-attachment: fixed;
