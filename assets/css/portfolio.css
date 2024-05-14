@@ -39,10 +39,6 @@
     margin-right: .5rem;
 }
 
-/* .portfolio li .title.github::before {
-    background-image: url('../img/icons/github.svg');
-} */
-
 .portfolio li .title.hbo::before {
     background-image: url('../img/icons/projects/hbo.png');
 }
@@ -73,6 +69,10 @@
 
 .portfolio li .title.pokedex::before {
     background-image: url('../img/icons/projects/pokemon.png');
+}
+
+.portfolio li .title.buscacep::before {
+    background-image: url('../img/icons/projects/buscacep.png');
 }
 
 .portfolio li .title.discord::before {
