@@ -17,6 +17,10 @@
     transition: .4s;
 }
 
+.redes a:hover {
+    transform: scale(1.12);
+}
+
 .redes a img {
     width: 22px;
     height: 22px;
