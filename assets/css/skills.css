@@ -17,9 +17,15 @@
 .skills .tools ul li img {
     max-width: 35px;
     margin: 0 .5rem;
+    margin-bottom: 15px;
 }
 
-.skills .courses ul {
+.skills .tools p {
+    margin: 0;
+    padding: 1px;
+}
+
+.skills .soft ul {
     font-size: .9rem;
 }
 
